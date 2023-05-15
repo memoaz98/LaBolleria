@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Milky - Dairy Website Template</title>
+    <title>La Bollería</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -14,7 +14,9 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">   
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -34,7 +36,8 @@
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
     <!-- Spinner End -->
@@ -45,9 +48,16 @@
         <div class="row g-0 d-none d-lg-flex">
             <div class="col-lg-6 ps-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center text-light">
-                    <span>Síguenos como:</span>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
+                    <span>Redes sociales:</span>
+                    <a class="btn btn-link text-light" target="_blank"
+                        href="https://wa.me/50664325900?text=¡Hola, visité su sitio web y me gustaría realizar una consulta!"><i
+                            class="bi bi-whatsapp"></i></a>
+                    <a class="btn btn-link text-light" target="_blank"
+                        href="https://www.instagram.com/labolleriacr/?fbclid=IwAR0MKMSitIbGgIa_4SW2U0Ifqy6U9aUXsqsqbD16D6lpwSvl94m3rwtIl2k"><i
+                            class="fab fa-instagram"></i></a>
+                    <a class="btn btn-link text-light" target="_blank"
+                        href="https://www.facebook.com/profile.php?id=100090992470804"><i
+                            class="fab fa-facebook-f"></i></a>
                 </div>
             </div>
             <div class="col-lg-6 text-end">
@@ -71,21 +81,18 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Inicio</a>
-                <a href="product.html" class="nav-item nav-link">Productos</a>
-                <a href="gallery.html" class="nav-item nav-link">Gallería</a>
-                <a href="service.html" class="nav-item nav-link">Servicios</a>
+                <a href="index.html" class="nav-item nav-link">Inicio</a>
+                <a href="productos.html" class="nav-item nav-link">Productos</a>
+                <a href="galeria.html" class="nav-item nav-link">Galería</a>
+                <a href="servicios.html" class="nav-item nav-link">Servicios</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Acerca de nosotros</a>
                     <div class="dropdown-menu bg-light m-0">
-                        <a href="feature.html" class="dropdown-item">Nuestro local</a>
-                        <a href="team.html" class="dropdown-item">Nuestro equipo</a>
+                        <a href="local.html" class="dropdown-item">Nuestro local</a>
+                        <a href="equipo.html" class="dropdown-item">Nuestro equipo</a>
                     </div>
                 </div>
-                <a href="contact.html" class="nav-item nav-link">Contacto</a>
-            </div>
-            <div class="border-start ps-4 d-none d-lg-block">
-                <button type="button" class="btn btn-sm p-0"><i class="fa fa-search"></i></button>
+                <a href="contacto.html" class="nav-item nav-link active">Contacto</a>
             </div>
         </div>
     </nav>
@@ -111,20 +118,20 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="section-title bg-white text-center text-primary px-3">Contact Us</p>
+                <p class="section-title bg-white text-center text-primary px-3">Contacto</p>
                 <h1 class="mb-5">En caso de que necesites contactarnos:</h1>
             </div>
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <form>
                         <div class="row g-3">
-                            <div class="col-md-6">
+                            <div class="col-12">
                                 <div class="form-floating">
                                     <input type="text" class="form-control" id="name" placeholder="Your Name">
                                     <label for="name">Nombre completo</label>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-12">
                                 <div class="form-floating">
                                     <input type="email" class="form-control" id="email" placeholder="Your Email">
                                     <label for="email">Correo electrónico</label>
@@ -138,12 +145,14 @@
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 250px"></textarea>
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message"
+                                        style="height: 250px"></textarea>
                                     <label for="message">Mensaje</label>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-secondary rounded-pill py-3 px-5" type="submit">Enviar mensaje</button>
+                                <button class="btn btn-secondary rounded-pill py-3 px-5 linkmas" type="submit">Enviar
+                                    mensaje</button>
                             </div>
                         </div>
                     </form>
@@ -166,7 +175,7 @@
                         </div>
                         <div class="ms-3">
                             <h6>Teléfono</h6>
-                            <span>8551 8358</span>
+                            <span>6432-5900</span>
                         </div>
                     </div>
                     <div class="d-flex border-bottom-0 pb-3 mb-3">
@@ -179,8 +188,11 @@
                         </div>
                     </div>
 
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.312647448692!2d-84.31302412404092!3d10.073448071764698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa059ea77df00f5%3A0x1dcaacac81a0250e!2sLa%20Bolleria!5e0!3m2!1ses!2scr!4v1683001711523!5m2!1ses!2scr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.312647448692!2d-84.31302412404092!3d10.073448071764698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa059ea77df00f5%3A0x1dcaacac81a0250e!2sLa%20Bolleria!5e0!3m2!1ses!2scr!4v1683001711523!5m2!1ses!2scr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
                 </div>
             </div>
         </div>
@@ -188,83 +200,86 @@
     <!-- Contact End -->
 
 
-   <!-- Footer Start -->
-   <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-    <div class="container py-5">
-        <div class="row g-5">
-            <div class="col-lg-3 col-md-6">
-                <h5 class="text-white mb-4">La Bollería</h5>
-                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Diagonal a la esquina noreste de la Iglesia Católica de Grecia</p>
-                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>6432-5900</p>
-                <p class="mb-2"><i class="fa fa-envelope me-3"></i>labolleria.crb@gmail.com</p>
-                <div class="d-flex pt-3">
-                    <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
-                    <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-4">La Bollería</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Diagonal a la esquina noreste de la Iglesia
+                        Católica de Grecia</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>6432-5900</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>labolleria.crb@gmail.com</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" target="_blank"
+                            href="https://wa.me/50664325900?text=¡Hola!, visité su sitio web y me gustaría realizar una consulta!"><i
+                                class="bi bi-whatsapp"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" target="_blank"
+                            href="https://www.instagram.com/labolleriacr/?fbclid=IwAR0MKMSitIbGgIa_4SW2U0Ifqy6U9aUXsqsqbD16D6lpwSvl94m3rwtIl2k"><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" target="_blank"
+                            href="https://www.facebook.com/profile.php?id=100090992470804"><i
+                                class="fab fa-facebook-f"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h5 class="text-white mb-4">Accesos Rápidos</h5>
-                <a class="btn btn-link" href="">Acerca de nosotros</a>
-                <a class="btn btn-link" href="">Contacto</a>
-                <a class="btn btn-link" href="">Servicios</a>
-                <a class="btn btn-link" href="">Términos y Condiciones</a>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h5 class="text-white mb-4">Horario:</h5>
-                <p class="mb-1">Lunes - Sábado</p>
-                <h6 class="text-light">06:00 am - 07:00 pm</h6>
 
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h5 class="text-white mb-4">Newsletter</h5>
-                <p>Recibe la actualización de nuestro menú rotativo</p>
-                <div class="position-relative w-100">
-                    <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Tu email">
-                    <button type="button" class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2">Inscribirse</button>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-4">Horario:</h5>
+                    <p class="mb-1">Lunes - Sábado</p>
+                    <h6 class="text-light">06:00 am - 07:00 pm</h6>
+
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-4">Mantenerme informado</h5>
+                    <p>Recibe la actualización de nuestro menú rotativo</p>
+                    <div class="form-floating footerform">
+                        <input type="text" class="form-control bg-transparent" id="name" placeholder="Tu correo">
+                        <label for="name">Tu correo</label>
+                        <button type="button"
+                            class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2">Inscribirse</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Footer End -->
+    <!-- Footer End -->
 
 
-<!-- Copyright Start -->
-<div class="container-fluid bg-secondary text-body copyright py-4">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                &copy; <a class="fw-semi-bold" href="#">La Bollería</a>, Todos los derechos reservados.
-            </div>
-            <div class="col-md-6 text-center text-md-end">
-                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">HTML Codex</a>
+    <!-- Copyright Start -->
+    <div class="container-fluid bg-secondary text-body copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="fw-semi-bold" href="#">La Bollería</a>, Todos los derechos reservados.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">HTML Codex</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Copyright End -->
+    <!-- Copyright End -->
 
 
-<!-- Back to Top -->
-<a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
 
 
-<!-- JavaScript Libraries -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="lib/wow/wow.min.js"></script>
-<script src="lib/easing/easing.min.js"></script>
-<script src="lib/waypoints/waypoints.min.js"></script>
-<script src="lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="lib/counterup/counterup.min.js"></script>
-<script src="lib/parallax/parallax.min.js"></script>
-<script src="lib/lightbox/js/lightbox.min.js"></script>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-<!-- Template Javascript -->
-<script src="js/main.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>

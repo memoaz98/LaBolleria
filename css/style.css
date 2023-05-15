@@ -474,7 +474,7 @@
 
 /*** Footer ***/
 .footer {
-    color: #B0B9AE;
+    color: #d1d1d1;
 }
 
 .footer .btn.btn-link {
@@ -500,4 +500,22 @@
     color: var(--light);
     letter-spacing: 1px;
     box-shadow: none;
+}
+
+/* To fix footer input text contrast */
+.footerform .form-control {
+    color: #d1d1d1;
+}
+
+.linkmas {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+body {
+    font-size: 1.1rem;
+}
+
+.darkgreen{
+    color: var(--dark)
 }
