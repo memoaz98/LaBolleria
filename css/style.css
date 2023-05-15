@@ -519,3 +519,7 @@ body {
 .darkgreen{
     color: var(--dark)
 }
+
+.modal-footer {
+    justify-content: center;
+}

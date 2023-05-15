@@ -123,30 +123,33 @@
             </div>
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <form>
+                    <form action="https://formsubmit.co/127b3f787e6835a731c34f41f27e02e7" method="POST">
                         <div class="row g-3">
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <input name="Nombre" type="text" class="form-control" id="name"
+                                        placeholder="Your Name">
                                     <label for="name">Nombre completo</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <input name="Correo" type="email" class="form-control" id="email"
+                                        placeholder="Your Email">
                                     <label for="email">Correo electrónico</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <input name="Asunto" type="text" class="form-control" id="subject"
+                                        placeholder="Subject">
                                     <label for="subject">Asunto</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message"
-                                        style="height: 250px"></textarea>
+                                    <textarea name="Mensaje" class="form-control" placeholder="Leave a message here"
+                                        id="message" style="height: 250px"></textarea>
                                     <label for="message">Mensaje</label>
                                 </div>
                             </div>
@@ -155,6 +158,9 @@
                                     mensaje</button>
                             </div>
                         </div>
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/contacto.html?ConfirmModal=true">
+                        <input type="hidden" name="_captcha" value="false">
+
                     </form>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -212,7 +218,7 @@
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>labolleria.crb@gmail.com</p>
                     <div class="d-flex pt-3">
                         <a class="btn btn-square btn-secondary rounded-circle me-2" target="_blank"
-                            href="https://wa.me/50664325900?text=¡Hola!, visité su sitio web y me gustaría realizar una consulta!"><i
+                            href="https://wa.me/50664325900?text=¡Hola, visité su sitio web y me gustaría realizar una consulta!"><i
                                 class="bi bi-whatsapp"></i></a>
                         <a class="btn btn-square btn-secondary rounded-circle me-2" target="_blank"
                             href="https://www.instagram.com/labolleriacr/?fbclid=IwAR0MKMSitIbGgIa_4SW2U0Ifqy6U9aUXsqsqbD16D6lpwSvl94m3rwtIl2k"><i
@@ -244,6 +250,59 @@
     </div>
     <!-- Footer End -->
 
+    <!-- Confirmation Popup -->
+    <div id="myModal" class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    ¡Mensaje enviado exitosamente!
+                    <br>
+                    <br>
+                    <div style="height: 200px; width: 200px; display: block; margin: auto;">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 314.3 314.3"
+                            style="enable-background:new 0 0 314.3 314.3;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0 {
+                                    fill: #005F4A;
+                                }
+
+                                .st1 {
+                                    fill: none;
+                                    stroke: #FFF8C2;
+                                    stroke-width: 8;
+                                    stroke-miterlimit: 10;
+                                }
+
+                                .st2 {
+                                    fill: none;
+                                    stroke: #FFF8C2;
+                                    stroke-width: 4;
+                                    stroke-linecap: round;
+                                    stroke-miterlimit: 10;
+                                }
+                            </style>
+                            <g>
+                                <circle class="st0" cx="157.1" cy="157.1" r="153.3" />
+                            </g>
+                            <path class="st1"
+                                d="M262.9,100.2l-26.4-26.4c-3-3-8-3-11,0l-94.9,94.9c-3,3-8,3-11,0L90.8,140c-3-3-8-3-11,0l-26.4,26.4
+        c-3,3-3,8,0,11l34.2,34.2l0,0l31.9,31.9c3,3,8,3,11,0l31.9-31.9l0,0l100.4-100.4C265.9,108.2,265.9,103.2,262.9,100.2z" />
+                            <line class="st2" x1="149.8" y1="166.3" x2="221.2" y2="94.9" />
+                            <line class="st2" x1="113.4" y1="220.7" x2="77.8" y2="185" />
+                        </svg>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn btn-secondary" onclick="HideConfirmationPopup()">Continuar
+                        navegando</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Copyright Start -->
     <div class="container-fluid bg-secondary text-body copyright py-4">
@@ -251,10 +310,6 @@
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                     &copy; <a class="fw-semi-bold" href="#">La Bollería</a>, Todos los derechos reservados.
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">HTML Codex</a>
                 </div>
             </div>
         </div>

@@ -64,3 +64,22 @@
     
 })(jQuery);
 
+function ShowConfirmationPopup(){
+    $('#myModal').modal('show');
+}
+
+function HideConfirmationPopup(){
+    $('#myModal').modal('hide');
+}
+
+function UrlConfirmation(){
+    const queryString = window.location.href;
+    console.log(queryString);
+    if(queryString.includes("ConfirmModal=true")){
+        ShowConfirmationPopup();
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function(){
+    UrlConfirmation();
+});
