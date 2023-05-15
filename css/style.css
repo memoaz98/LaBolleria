@@ -1,9 +1,9 @@
 /********** Template CSS **********/
 :root {
-    --primary: #5B8C51;
+    --primary: #194f44;
     --secondary: #EDDD5E;
     --light: #F7F7F7;
-    --dark: #404A3D;
+    --dark: #194f44;
 }
 
 .back-to-top {
@@ -289,7 +289,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .75);
     border-radius: 10px;
     z-index: 1;
 }
@@ -363,7 +363,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .75);
     opacity: 0;
     padding-top: 60px;
     transition: .5s;
